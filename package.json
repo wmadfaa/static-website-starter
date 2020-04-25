@@ -1,0 +1,22 @@
+{
+  "name": "static-website-scripts",
+  "version": "0.0.0",
+  "description": "set of scripts and configuration to used by creating static website",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "static website configs",
+    "webpack",
+    "typescript",
+    "scss",
+    "jade"
+  ],
+  "author": {
+    "name": "Wasim Almadfaa",
+    "email": "wm.madfaa@gmail.com",
+    "url": "https://github.com/wmadfaa"
+  },
+  "license": "MIT"
+}
