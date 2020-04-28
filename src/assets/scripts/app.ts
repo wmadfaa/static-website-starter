@@ -1,27 +1,16 @@
-import logger from './logger';
+import {MDCRipple} from '@material/ripple';
+import {MDCIconButtonToggle} from '@material/icon-button';
 
 /**
- * create a header and button
- * assign the logger function to the button.onclick
+ * init app scripts
  */
 function init(): void {
-  const container =
-    document.querySelector('#root') || document.createElement('div');
-  container.className = 'container';
-
-  const title = document.createElement('h1');
-  title.className = 'title';
-  title.innerHTML = 'hallo world!';
-
-  const button = document.createElement('button');
-  button.title = 'btn';
-  button.innerHTML = 'click me to log!';
-  button.onclick = logger;
-
-  container.appendChild(title);
-  container.appendChild(button);
-
-  document.body.appendChild(container);
+  const selector = '.mdc-button, .mdc-card__primary-action';
+  [].map.call(document.querySelectorAll(selector), function (el) {
+    return new MDCRipple(el);
+  });
+  const iconBtn = document.querySelector('.mdc-icon-button');
+  if (iconBtn) new MDCIconButtonToggle(iconBtn);
 }
 
 export default init;

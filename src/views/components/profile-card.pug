@@ -1,0 +1,23 @@
+mixin profile-card()
+  .mdc-card.card
+    .mdc-card__primary-action(tabindex='0')
+      .mdc-card__media.media.mdc-card__media--16-9
+        .mdc-card__media-content.media-content
+          .primary
+            h2.title.mdc-typography.mdc-typography--headline6 Wasim Almadfaa
+            h3.subtitle.mdc-typography.mdc-typography--subtitle2 Frontend Developer
+      .secondary.mdc-typography.mdc-typography--body2 a self-motivated IT professional with huge knowledge and proficiency in javascript CSS HTML react react-native and mobile responsive web development and strong skills and ability in writing clean and efficient code.
+    .mdc-card__actions
+      .mdc-card__action-buttons
+        button.mdc-button.mdc-card__action.mdc-card__action--button
+          span.mdc-button__ripple
+          |  Read
+        button.mdc-button.mdc-card__action.mdc-card__action--button
+          span.mdc-button__ripple
+          |  Bookmark
+      .mdc-card__action-icons
+        button.mdc-icon-button.mdc-card__action.mdc-card__action--icon--unbounded(aria-pressed='false', aria-label='Add to favorites', title='Add to favorites')
+          i.material-icons.mdc-icon-button__icon.mdc-icon-button__icon--on favorite
+          i.material-icons.mdc-icon-button__icon favorite_border
+        button.mdc-icon-button.material-icons.mdc-card__action.mdc-card__action--icon--unbounded(title='Share', data-mdc-ripple-is-unbounded='true') share
+        button.mdc-icon-button.material-icons.mdc-card__action.mdc-card__action--icon--unbounded(title='More options', data-mdc-ripple-is-unbounded='true') more_vert

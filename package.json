@@ -66,6 +66,7 @@
     "style-loader": "^1.2.0",
     "stylelint": "^13.3.3",
     "stylelint-config-standard": "^20.0.0",
+    "stylelint-scss": "^3.17.1",
     "stylelint-webpack-plugin": "^1.2.3",
     "typescript": "^3.8.3",
     "url-loader": "^4.1.0",
@@ -76,7 +77,14 @@
     "webpack-merge": "^4.2.2",
     "webpack-notifier": "^1.8.0"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@material/button": "^6.0.0",
+    "@material/card": "^6.0.0",
+    "@material/icon-button": "^6.0.0",
+    "@material/ripple": "^6.0.0",
+    "@material/typography": "^6.0.0",
+    "material-icons": "^0.3.1"
+  },
   "browserslist": {
     "production": [
       ">0.2%",

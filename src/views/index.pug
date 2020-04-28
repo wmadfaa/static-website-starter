@@ -1,8 +1,10 @@
 extends ./layouts/master.pug
+include ./components/profile-card
+
 
 block title
   title Page - Home
 
 block content
-
-  dev#root
+  div.container
+    +profile-card()

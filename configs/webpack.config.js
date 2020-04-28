@@ -22,7 +22,7 @@ const {
 module.exports = (env) => ({
   mode: env,
   context: path.resolve(cwd, 'src'),
-  entry: path.resolve(cwd, 'src/index.ts'),
+  entry: [path.resolve(cwd, 'src/index.ts'),path.resolve(cwd, 'src/index.scss')],
   devtool: env === 'development' ? 'inline-cheap-source-map' : undefined,
   devServer: env === 'development' ? DEV_SERVER_CONFIG : undefined,
   resolve: {
@@ -105,6 +105,9 @@ module.exports = (env) => ({
             loader: 'sass-loader',
             options: {
               sourceMap: env !== 'production',
+              sassOptions: {
+                includePaths: [path.resolve(cwd, './node_modules')]
+              }
             },
           },
         ],
