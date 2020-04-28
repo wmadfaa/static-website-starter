@@ -1,14 +1,14 @@
 {
   "name": "static-website-starter",
   "version": "1.0.0",
-  "description": "set of configurations to used by creating a static website",
+  "description": "static website boilerplate (webpack,pug,scss/sass,typescript,eslint,prettier,stylelint)",
   "private": true,
   "scripts": {
     "build": "webpack --config ./configs/webpack.config.js --env.NODE_ENV=production --p --progress",
     "start": "webpack-dev-server --config ./configs/webpack.config.js --env.NODE_ENV=production --mode=production -p --progress --open"
   },
   "keywords": [
-    "static website configs",
+    "static website",
     "webpack",
     "typescript",
     "scss",
