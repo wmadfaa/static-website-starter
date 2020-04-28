@@ -1,7 +1,7 @@
 {
-  "name": "static-website-scripts",
-  "version": "0.0.0",
-  "description": "set of scripts and configuration to used by creating static website",
+  "name": "static-website-starter",
+  "version": "1.0.0",
+  "description": "set of configurations to used by creating a static website",
   "private": true,
   "scripts": {
     "build": "webpack --config ./configs/webpack.config.js --env.NODE_ENV=production --p --progress",
